@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MSAL"
-  s.version      = "1.2.5"
+  s.version      = "1.2.51"
   s.summary      = "Microsoft Authentication Library (MSAL) for iOS"
   s.description  = <<-DESC
                    The MSAL library for iOS gives your app the ability to begin using the Microsoft Cloud by supporting Microsoft Azure Active Directory and Microsoft Accounts in a converged experience using industry standard OAuth2 and OpenID Connect. The library also supports Microsoft Azure B2C for those using our hosted identity management service.
@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
   }
 
   s.pod_target_xcconfig = { 'CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF' => 'NO' }
+  s.resource_bundles = {"MSAL" => ["MSAL/PrivacyInfo.xcprivacy"]}
   s.default_subspecs ='app-lib'
   
   s.prefix_header_file = "MSAL/src/MSAL.pch"
