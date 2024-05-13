@@ -52,4 +52,10 @@ Pod::Spec.new do |s|
   	ext.requires_arc = true
   end
 
+  s.resource_bundles = {
+    'MSAL': [
+      'MSAL/**/*.xcprivacy'
+    ]
+  }
+
 end
